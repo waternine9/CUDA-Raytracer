@@ -184,7 +184,7 @@ void CallBackFunc(int event, int x, int y, int flags, void* userdata)
 }
 int main()
 {
-    /* ifstream f("C:/Users/arthu/ObjFiles/pigeon.obj");
+    ifstream f("C:/Users/arthu/ObjFiles/pigeon.obj");
     if (!f.is_open()) return 1;
     std::vector<std::vector<float>> verts;
     int triStep = 0;
@@ -220,7 +220,7 @@ int main()
             globVars.trigData[triStep * 9 + 8] = verts[f[2] - 1][2] * 10 + 100;
             triStep += 1;
         }
-    } */
+    }
 
     srand(time(NULL));
     for (int x = 0;x < NUMSPHERES;x++)
